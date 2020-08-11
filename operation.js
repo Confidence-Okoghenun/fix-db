@@ -1,7 +1,7 @@
-const Album = require('./model-no-index/album');
-const Artist = require('./model-no-index/artist');
-const Song = require('./model-no-index/song');
-const Genre = require('./model-no-index/genre');
+const Album = require('./model/album');
+const Artist = require('./model/artist');
+const Song = require('./model/song');
+const Genre = require('./model/genre');
 const log = require('./utils/log');
 const asyncForEach = require('./utils/asyncforeach');
 const fs = require('fs');
@@ -122,5 +122,7 @@ const rmvDupsGenre = async () => {
 };
 
 module.exports = async () => {
-  rmvDupsGenre();
+  // rmvDupsGenre();
+  // getDupsGenre()
+  console.log('Done')
 };
